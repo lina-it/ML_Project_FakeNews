@@ -1,0 +1,21 @@
+Here’s a requirements.txt capturing all the libraries your notebooks depend on:
+accelerate>=0.26.0
+joblib
+matplotlib
+numpy
+pandas
+python-dateutil
+scikit-learn
+seaborn
+torch
+transformers
+xgboost
+nltk
+
+Save that file as requirements.txt in your project root. You can install everything with:
+pip install -r requirements.txt
+
+Afterwards, be sure to download the NLTK corpora:
+import nltk
+nltk.download('stopwords')
+nltk.download('wordnet')
